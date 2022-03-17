@@ -3,7 +3,18 @@ entries:
   platform-services:
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2022-03-16T22:31:29.457008149Z"
+    created: "2022-03-17T16:46:33.511397638Z"
+    description: Deploys commonly used kubernetes services as argocd applications,
+      along with any dependent secrets, certificates, etc.
+    digest: 8a7df933ad999f710e62a88a810b667f7d7802ba0d8d9f135eb3817e3129a8b2
+    name: platform-services
+    type: application
+    urls:
+    - platform-services-1.0.0-alpha.8.tgz
+    version: 1.0.0-alpha.8
+  - apiVersion: v2
+    appVersion: 0.0.0
+    created: "2022-03-17T16:46:33.508976531Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: b257341e63f78c1c491b13ca60df256b4982646fb0ecb45369e7e374b84a5241
@@ -14,7 +25,7 @@ entries:
     version: 1.0.0-alpha.7
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2022-03-16T22:31:29.455220829Z"
+    created: "2022-03-17T16:46:33.507060147Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 320cfb9782ac86303bb66e6f3acb9136dbb58ad2c615708bdc04408d7529b546
@@ -25,7 +36,7 @@ entries:
     version: 1.0.0-alpha.6
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2022-03-16T22:31:29.453342808Z"
+    created: "2022-03-17T16:46:33.505506779Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 978ed50c4cc4670a1ee548456d64ac5fad51034a061587b2da9187f2ce3e7846
@@ -36,7 +47,7 @@ entries:
     version: 1.0.0-alpha.5
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2022-03-16T22:31:29.450317674Z"
+    created: "2022-03-17T16:46:33.503969511Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: af1bd5ac68b7e304037f4976f15ad1949585b0fc8dddb84fc8f569035e07f185
@@ -47,7 +58,7 @@ entries:
     version: 1.0.0-alpha.4
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2022-03-16T22:31:29.448675556Z"
+    created: "2022-03-17T16:46:33.502515447Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: efd01d8e96f6536aa638bc8f2058e8521b15d33b5f26543703963d0ff684ba3f
@@ -58,7 +69,7 @@ entries:
     version: 1.0.0-alpha.3
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2022-03-16T22:31:29.44725474Z"
+    created: "2022-03-17T16:46:33.501203089Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: d2548119f41803bf2528a85cb66dd94d2712813fff18a2b1c90a2f6ce909fa47
@@ -69,7 +80,7 @@ entries:
     version: 1.0.0-alpha.2
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2022-03-16T22:31:29.445705523Z"
+    created: "2022-03-17T16:46:33.499646521Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 6b469ad66bde612d1d4b25d834379bccf1d1976e9f2192c8500d7c56c3f48703
@@ -78,4 +89,4 @@ entries:
     urls:
     - platform-services-1.0.0-alpha.1.tgz
     version: 1.0.0-alpha.1
-generated: "2022-03-16T22:31:29.443908103Z"
+generated: "2022-03-17T16:46:33.496796696Z"

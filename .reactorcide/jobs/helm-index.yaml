@@ -1,0 +1,37 @@
+name: helm-index
+description: "Run helm repo index when .tgz chart packages change on main"
+job:
+  image: containers.catalystsquad.com/public/reactorcide/runnerbase:dev
+  command: |
+    set -e
+    CODE_DIR="${REACTORCIDE_CODE_DIR:-/job/src}"
+    if [ ! -d "${CODE_DIR}/.git" ]; then
+      git clone "https://x-access-token:${GITHUB_PAT}@github.com/${CHARTS_REPO}.git" "${CODE_DIR}"
+    fi
+    cd "${CODE_DIR}"
+    git checkout "${REACTORCIDE_SHA:-${REACTORCIDE_HEAD_REF:-main}}"
+
+    CHANGED_TGZ=$(git diff-tree --no-commit-id --name-only -r HEAD -- '*.tgz')
+    if [ -z "$CHANGED_TGZ" ]; then
+      echo "No .tgz changes in this commit, skipping helm repo index"
+      exit 0
+    fi
+
+    helm repo index . --url ${CHARTS_PAGES_URL} --merge index.yaml
+
+    git config user.name "catalystcommunityci"
+    git config user.email "ci@catalystcommunity.org"
+    git add index.yaml
+    if git diff --cached --quiet; then
+      echo "index.yaml already up to date"
+      exit 0
+    fi
+    git commit -m "Automation - update helm chart index"
+    git push "https://x-access-token:${GITHUB_PAT}@github.com/${CHARTS_REPO}.git" HEAD:main
+  timeout: 60
+  priority: 10
+  disable_run_local: true
+environment:
+  GITHUB_PAT: "${secret:catalystcommunity/ci:githubpat}"
+  CHARTS_REPO: "catalystcommunity/charts"
+  CHARTS_PAGES_URL: "https://catalystcommunity.github.io/charts"

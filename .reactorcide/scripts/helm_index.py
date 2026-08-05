@@ -21,8 +21,8 @@ _SECRET_VALUES = set()
 
 HELM_VERSION = "v4.2.3"
 HELM_BASE_URL = "https://get.helm.sh"
-# helm-v4.2.3-linux-arm64.tar.gz
-HELM_CHECKSUM = "21abd9354d39b2cd79a8d76be6912cd137a983cbf997193503fb8a6a6e2f2785"
+# helm-v4.2.3-linux-amd64.tar.gz
+HELM_CHECKSUM = "e9b88b4ee95b18c706839c28d3a0220e5bc470e9cd9262410c90793c45ff8b7c"
 
 def log(msg: str) -> None:
     """Print log message."""
@@ -76,7 +76,7 @@ def install_helm() -> None:
         log("helm already installed, skipping install")
         return
 
-    tarball_name = f"helm-{HELM_VERSION}-linux-arm64.tar.gz"
+    tarball_name = f"helm-{HELM_VERSION}-linux-amd64.tar.gz"
     tarball_url = f"{HELM_BASE_URL}/{tarball_name}"
     expected_sha256 = HELM_CHECKSUM
 
@@ -97,7 +97,7 @@ def install_helm() -> None:
             tar.extractall(tmpdir)
 
         install_dir = Path(tempfile.mkdtemp(prefix="helm-bin-"))
-        extracted_binary = Path(tmpdir) / "linux-arm64" / "helm"
+        extracted_binary = Path(tmpdir) / "linux-amd64" / "helm"
         shutil.copy2(extracted_binary, install_dir / "helm")
         os.chmod(install_dir / "helm", 0o755)
         os.environ["PATH"] = f"{install_dir}{os.pathsep}{os.environ.get('PATH', '')}"

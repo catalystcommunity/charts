@@ -193,7 +193,7 @@ def update_index(config: dict) -> int:
     run_cmd(f"git checkout {config['ref']}")
 
     log(f"Running helm repo index (url={charts_pages_url})")
-    run_cmd(f"helm repo index . --url {charts_pages_url} --merge index.yaml")
+    run_cmd(f"helm repo index . --url {charts_pages_url} index.yaml")
 
     run_cmd('git config user.name "catalystcommunityci"')
     run_cmd('git config user.email "ci@catalystcommunity.org"')

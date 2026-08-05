@@ -4,15 +4,23 @@
 This script is invoked by runnerlib after source checkout. It mirrors the
 structure of reactorcide/jobs/scripts/deploy_k8s.py.
 """
+import hashlib
 import json
 import os
+import shutil
 import socket
 import struct
 import subprocess
 import sys
+import tarfile
+import tempfile
+import urllib.request
 from pathlib import Path
 
 _SECRET_VALUES = set()
+
+HELM_VERSION = "v4.2.3"
+HELM_BASE_URL = "https://get.helm.sh"
 
 
 def log(msg: str) -> None:
@@ -61,6 +69,49 @@ def register_secret(secret: str) -> None:
         log(f"ERROR: Failed to register secret for masking: {e}")
 
 
+def install_helm() -> None:
+    """Download, checksum-verify, and install the pinned helm version."""
+    if shutil.which("helm"):
+        log("helm already installed, skipping install")
+        return
+
+    machine = os.uname().machine
+    arch = {"x86_64": "amd64", "aarch64": "arm64", "arm64": "arm64"}.get(machine)
+    if not arch:
+        raise RuntimeError(f"Unsupported architecture for helm install: {machine}")
+
+    tarball_name = f"helm-{HELM_VERSION}-linux-{arch}.tar.gz"
+    tarball_url = f"{HELM_BASE_URL}/{tarball_name}"
+    checksum_url = f"{tarball_url}.sha256sum"
+
+    with tempfile.TemporaryDirectory() as tmpdir:
+        tarball_path = Path(tmpdir) / tarball_name
+
+        log(f"Downloading {tarball_url}")
+        urllib.request.urlretrieve(tarball_url, tarball_path)
+
+        log(f"Downloading {checksum_url}")
+        with urllib.request.urlopen(checksum_url) as resp:
+            expected_sha256 = resp.read().decode("utf-8").strip().split()[0]
+
+        actual_sha256 = hashlib.sha256(tarball_path.read_bytes()).hexdigest()
+        if actual_sha256 != expected_sha256:
+            raise RuntimeError(
+                f"helm checksum mismatch: expected {expected_sha256}, got {actual_sha256}"
+            )
+        log("helm checksum verified")
+
+        with tarfile.open(tarball_path) as tar:
+            tar.extractall(tmpdir)
+
+        install_dir = Path(tempfile.mkdtemp(prefix="helm-bin-"))
+        extracted_binary = Path(tmpdir) / f"linux-{arch}" / "helm"
+        shutil.copy2(extracted_binary, install_dir / "helm")
+        os.chmod(install_dir / "helm", 0o755)
+        os.environ["PATH"] = f"{install_dir}{os.pathsep}{os.environ.get('PATH', '')}"
+        log(f"Installed helm {HELM_VERSION} to {install_dir / 'helm'}")
+
+
 def read_config() -> dict:
     """Read job config from environment variables."""
     return {
@@ -81,6 +132,8 @@ def update_index(config: dict) -> int:
     github_pat = config['github_pat']
     charts_repo = config['charts_repo']
     charts_pages_url = config['charts_pages_url']
+
+    install_helm()
 
     register_secret(github_pat)
     remote_url = authenticated_url(charts_repo, github_pat)

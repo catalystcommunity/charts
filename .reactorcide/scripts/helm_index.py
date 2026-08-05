@@ -21,7 +21,8 @@ _SECRET_VALUES = set()
 
 HELM_VERSION = "v4.2.3"
 HELM_BASE_URL = "https://get.helm.sh"
-
+# helm-v4.2.3-linux-arm64.tar.gz
+HELM_CHECKSUM = "21abd9354d39b2cd79a8d76be6912cd137a983cbf997193503fb8a6a6e2f2785"
 
 def log(msg: str) -> None:
     """Print log message."""
@@ -75,24 +76,15 @@ def install_helm() -> None:
         log("helm already installed, skipping install")
         return
 
-    machine = os.uname().machine
-    arch = {"x86_64": "amd64", "aarch64": "arm64", "arm64": "arm64"}.get(machine)
-    if not arch:
-        raise RuntimeError(f"Unsupported architecture for helm install: {machine}")
-
-    tarball_name = f"helm-{HELM_VERSION}-linux-{arch}.tar.gz"
+    tarball_name = f"helm-{HELM_VERSION}-linux-arm64.tar.gz"
     tarball_url = f"{HELM_BASE_URL}/{tarball_name}"
-    checksum_url = f"{tarball_url}.sha256sum"
+    expected_sha256 = HELM_CHECKSUM
 
     with tempfile.TemporaryDirectory() as tmpdir:
         tarball_path = Path(tmpdir) / tarball_name
 
         log(f"Downloading {tarball_url}")
         urllib.request.urlretrieve(tarball_url, tarball_path)
-
-        log(f"Downloading {checksum_url}")
-        with urllib.request.urlopen(checksum_url) as resp:
-            expected_sha256 = resp.read().decode("utf-8").strip().split()[0]
 
         actual_sha256 = hashlib.sha256(tarball_path.read_bytes()).hexdigest()
         if actual_sha256 != expected_sha256:
@@ -105,7 +97,7 @@ def install_helm() -> None:
             tar.extractall(tmpdir)
 
         install_dir = Path(tempfile.mkdtemp(prefix="helm-bin-"))
-        extracted_binary = Path(tmpdir) / f"linux-{arch}" / "helm"
+        extracted_binary = Path(tmpdir) / "linux-arm64" / "helm"
         shutil.copy2(extracted_binary, install_dir / "helm")
         os.chmod(install_dir / "helm", 0o755)
         os.environ["PATH"] = f"{install_dir}{os.pathsep}{os.environ.get('PATH', '')}"

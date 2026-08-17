@@ -1,16 +1,8 @@
 name: helm-index
 description: "Run helm repo index when .tgz chart packages change on main"
-triggers:
-  events:
-    - push
-  branches:
-    - main
-paths:
-  include:
-    - "*.tgz"
 job:
-  image: containers.catalystsquad.com/public/reactorcide/runnerbase:dev
-  command: "python /job/src/.reactorcide/scripts/helm_index.py"
+  image: containers.catalystsquad.com/public/reactorcide/runnerbase:latest
+  command: "python3 /job/src/.reactorcide/scripts/helm_index.py"
   timeout: 60
   priority: 10
   disable_run_local: true

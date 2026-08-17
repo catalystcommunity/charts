@@ -1,0 +1,14 @@
+id: helm-index
+name: Helm index
+description: "Update the Helm repository index when chart packages change on main."
+on:
+  events:
+    - push
+  branches:
+    - main
+paths:
+  include:
+    - "*.tgz"
+jobs:
+  helm-index:
+    job_file: helm-index.yaml

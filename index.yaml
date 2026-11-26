@@ -3,7 +3,7 @@ entries:
   aws-ecr-creds:
   - apiVersion: v1
     appVersion: 1.0.0
-    created: "2026-11-26T04:46:12.332464659Z"
+    created: "2026-11-26T06:26:26.395330534Z"
     description: maintain AWS ECR credentials in most namespaces
     digest: f517814a50a2549d87a277aee5b17035bc9510047c08457f8026102650e74182
     keywords:
@@ -21,7 +21,7 @@ entries:
     version: 1.0.3
   - apiVersion: v1
     appVersion: 1.0.0
-    created: "2026-11-26T04:46:12.33076712Z"
+    created: "2026-11-26T06:26:26.393064535Z"
     description: maintain AWS ECR credentials in most namespaces
     digest: 1e49fce25d458a58199540a15b179336c0c3b4a369fab3edc6c06438489607ac
     keywords:
@@ -39,7 +39,7 @@ entries:
     version: 1.0.2
   - apiVersion: v1
     appVersion: 1.0.0
-    created: "2026-11-26T04:46:12.329337995Z"
+    created: "2026-11-26T06:26:26.392095733Z"
     description: maintain AWS ECR credentials in most namespaces
     digest: 67d0af9400e9fa40de52553db0bdd1624a38ba35e4206fe2b0027e63f4b886f3
     keywords:
@@ -57,7 +57,7 @@ entries:
     version: 1.0.1
   - apiVersion: v1
     appVersion: 1.0.0
-    created: "2026-11-26T04:46:12.327827276Z"
+    created: "2026-11-26T06:26:26.390934627Z"
     description: maintain AWS ECR credentials in most namespaces
     digest: dc6dea4dd39de2d51d46ff21afea89d27b6cfe5c165f3e947a2300b1de732a46
     keywords:
@@ -76,7 +76,7 @@ entries:
   cockroachdb:
   - apiVersion: v1
     appVersion: 22.1.0
-    created: "2026-11-26T04:46:12.344723279Z"
+    created: "2026-11-26T06:26:26.403657395Z"
     description: CockroachDB is a scalable, survivable, strongly-consistent SQL database.
     digest: c65be14b3ecb023d6ce88e2345a7be423dc13f05e58f22ff7eeae6d7a61c6494
     home: https://www.cockroachlabs.com
@@ -93,7 +93,7 @@ entries:
   corndogs:
   - apiVersion: v2
     appVersion: 0.8.1
-    created: "2026-11-26T04:46:12.524476245Z"
+    created: "2026-11-26T06:26:26.554898861Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -112,7 +112,7 @@ entries:
     version: 0.6.1
   - apiVersion: v2
     appVersion: 0.8.0
-    created: "2026-11-26T04:46:12.507974368Z"
+    created: "2026-11-26T06:26:26.535827885Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -131,7 +131,7 @@ entries:
     version: 0.6.0
   - apiVersion: v2
     appVersion: 0.7.6
-    created: "2026-11-26T04:46:12.49372779Z"
+    created: "2026-11-26T06:26:26.526039677Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -150,7 +150,7 @@ entries:
     version: 0.5.7
   - apiVersion: v2
     appVersion: 0.7.5
-    created: "2026-11-26T04:46:12.478569711Z"
+    created: "2026-11-26T06:26:26.509399875Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -169,7 +169,7 @@ entries:
     version: 0.5.6
   - apiVersion: v2
     appVersion: 0.7.4
-    created: "2026-11-26T04:46:12.465779818Z"
+    created: "2026-11-26T06:26:26.485680085Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -188,7 +188,7 @@ entries:
     version: 0.5.5
   - apiVersion: v2
     appVersion: 0.7.2
-    created: "2026-11-26T04:46:12.443563276Z"
+    created: "2026-11-26T06:26:26.467026331Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -207,7 +207,7 @@ entries:
     version: 0.5.4
   - apiVersion: v2
     appVersion: 0.7.1
-    created: "2026-11-26T04:46:12.416881559Z"
+    created: "2026-11-26T06:26:26.448924803Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -226,7 +226,7 @@ entries:
     version: 0.5.3
   - apiVersion: v2
     appVersion: 0.1.10
-    created: "2026-11-26T04:46:12.363529194Z"
+    created: "2026-11-26T06:26:26.417594883Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -241,7 +241,7 @@ entries:
     version: 0.1.10
   - apiVersion: v2
     appVersion: 0.1.9
-    created: "2026-11-26T04:46:12.389247335Z"
+    created: "2026-11-26T06:26:26.434136549Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -257,7 +257,7 @@ entries:
   go-notifications:
   - apiVersion: v2
     appVersion: 1.2.1
-    created: "2026-11-26T04:46:12.97651621Z"
+    created: "2026-11-26T06:26:27.042487665Z"
     dependencies:
     - condition: cockroachdb.enabled
       name: cockroachdb
@@ -276,7 +276,7 @@ entries:
     version: 1.1.2-alpha.2
   - apiVersion: v2
     appVersion: 1.1.1
-    created: "2026-11-26T04:46:12.938888535Z"
+    created: "2026-11-26T06:26:27.00030326Z"
     dependencies:
     - condition: cockroachdb.enabled
       name: cockroachdb
@@ -295,7 +295,7 @@ entries:
     version: 1.1.2-alpha.1
   - apiVersion: v2
     appVersion: 1.1.1
-    created: "2026-11-26T04:46:12.907808957Z"
+    created: "2026-11-26T06:26:26.963897546Z"
     dependencies:
     - condition: cockroachdb.enabled
       name: cockroachdb
@@ -314,7 +314,7 @@ entries:
     version: 1.1.1
   - apiVersion: v2
     appVersion: 1.1.1
-    created: "2026-11-26T04:46:12.878971101Z"
+    created: "2026-11-26T06:26:26.928792466Z"
     dependencies:
     - condition: cockroachdb.enabled
       name: cockroachdb
@@ -333,7 +333,7 @@ entries:
     version: 1.1.1-alpha.1
   - apiVersion: v2
     appVersion: 1.1.0
-    created: "2026-11-26T04:46:12.845345571Z"
+    created: "2026-11-26T06:26:26.89477262Z"
     dependencies:
     - condition: cockroachdb.enabled
       name: cockroachdb
@@ -352,7 +352,7 @@ entries:
     version: 1.1.0
   - apiVersion: v2
     appVersion: 1.1.0
-    created: "2026-11-26T04:46:12.799342872Z"
+    created: "2026-11-26T06:26:26.856945483Z"
     dependencies:
     - condition: cockroachdb.enabled
       name: cockroachdb
@@ -371,7 +371,7 @@ entries:
     version: 1.1.0-alpha.1
   - apiVersion: v2
     appVersion: 1.0.4
-    created: "2026-11-26T04:46:12.764582837Z"
+    created: "2026-11-26T06:26:26.819074056Z"
     dependencies:
     - condition: cockroachdb.enabled
       name: cockroachdb
@@ -390,7 +390,7 @@ entries:
     version: 1.0.1-alpha.1
   - apiVersion: v2
     appVersion: 1.0.4
-    created: "2026-11-26T04:46:12.73586783Z"
+    created: "2026-11-26T06:26:26.788592704Z"
     dependencies:
     - condition: cockroachdb.enabled
       name: cockroachdb
@@ -409,7 +409,7 @@ entries:
     version: 1.0.0
   - apiVersion: v2
     appVersion: 1.0.4
-    created: "2026-11-26T04:46:12.691188026Z"
+    created: "2026-11-26T06:26:26.760753055Z"
     dependencies:
     - condition: cockroachdb.enabled
       name: cockroachdb
@@ -428,7 +428,7 @@ entries:
     version: 1.0.0-alpha.5
   - apiVersion: v2
     appVersion: 1.0.4
-    created: "2026-11-26T04:46:12.656679605Z"
+    created: "2026-11-26T06:26:26.720633176Z"
     dependencies:
     - condition: cockroachdb.enabled
       name: cockroachdb
@@ -447,7 +447,7 @@ entries:
     version: 1.0.0-alpha.4
   - apiVersion: v2
     appVersion: 1.0.2
-    created: "2026-11-26T04:46:12.621133406Z"
+    created: "2026-11-26T06:26:26.687730839Z"
     dependencies:
     - condition: cockroachdb.enabled
       name: cockroachdb
@@ -466,7 +466,7 @@ entries:
     version: 1.0.0-alpha.3
   - apiVersion: v2
     appVersion: 1.0.2
-    created: "2026-11-26T04:46:12.586060582Z"
+    created: "2026-11-26T06:26:26.658689875Z"
     dependencies:
     - condition: cockroachdb.enabled
       name: cockroachdb
@@ -485,7 +485,7 @@ entries:
     version: 1.0.0-alpha.2
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:12.55389693Z"
+    created: "2026-11-26T06:26:26.605688012Z"
     dependencies:
     - condition: cockroachdb.enabled
       name: cockroachdb
@@ -505,7 +505,7 @@ entries:
   notifo:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-11-26T04:46:13.051274188Z"
+    created: "2026-11-26T06:26:27.123798403Z"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -524,7 +524,7 @@ entries:
     version: 1.0.0-alpha.3
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-11-26T04:46:13.025351182Z"
+    created: "2026-11-26T06:26:27.091616791Z"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -543,7 +543,7 @@ entries:
     version: 1.0.0-alpha.2
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-11-26T04:46:13.002055586Z"
+    created: "2026-11-26T06:26:27.067140326Z"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -563,7 +563,7 @@ entries:
   platform-services:
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:14.17938989Z"
+    created: "2026-11-26T06:26:28.096549708Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 7e421ece323cdbbf24655631f62d6dac22f20647f0709d11d3c514be5c5f4f43
@@ -574,7 +574,7 @@ entries:
     version: 2.3.0
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:14.156964816Z"
+    created: "2026-11-26T06:26:28.07687865Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: ca6d36c30baa650edef2629a803ef3a49feee17a68f7282e075599a64e967157
@@ -585,7 +585,7 @@ entries:
     version: 2.3.0-alpha.1
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:14.130589706Z"
+    created: "2026-11-26T06:26:28.060970294Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: e40dd020b2ac8f584617dd87f262bf2f108caae959febcd67782cc5aaddc8bc6
@@ -596,7 +596,7 @@ entries:
     version: 2.2.0
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:14.102229861Z"
+    created: "2026-11-26T06:26:28.04258188Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 0f54a8f6316b8f5e141c2cd8cf7a06a18c9a9d71672f10a7b13b99209240eb1b
@@ -607,7 +607,7 @@ entries:
     version: 2.2.0-alpha.1
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:14.079871407Z"
+    created: "2026-11-26T06:26:28.024552856Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 52b3c19e4d004f0290aea16d05ec89c656bb0a0b7426ac245f515396476fc091
@@ -618,7 +618,7 @@ entries:
     version: 2.1.1
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:14.060862484Z"
+    created: "2026-11-26T06:26:28.009172723Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 7bfc7bcf597e6026f9a44831f913c27d7ca177b8bf087ec46e204aa6ec3a481b
@@ -629,7 +629,7 @@ entries:
     version: 2.1.1-alpha.3
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:14.044779672Z"
+    created: "2026-11-26T06:26:27.993690303Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 357844fac3765d1647ea902c3a3628458bacac1adb9702ce8752013f0317d72f
@@ -640,7 +640,7 @@ entries:
     version: 2.1.1-alpha.2
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:14.02627074Z"
+    created: "2026-11-26T06:26:27.974346673Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 26c7cdc8d8b86bf6117acc2e25f41c99e2fa1813a09e00f994cf82d3a628af31
@@ -651,7 +651,7 @@ entries:
     version: 2.1.1-alpha.1
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:14.006440397Z"
+    created: "2026-11-26T06:26:27.962282691Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 3a31fd57c8cc55134918e3bd03d769b1cf8b52d05aeace0fbbd002d0723cefe7
@@ -662,7 +662,7 @@ entries:
     version: 2.1.0
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.986559039Z"
+    created: "2026-11-26T06:26:27.94246404Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 3b748dfcd539ccd5c60c62fce908df977d2ef2771023dfedec5e68aef05d4723
@@ -673,7 +673,7 @@ entries:
     version: 2.1.0-alpha.1
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.963785629Z"
+    created: "2026-11-26T06:26:27.925445246Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: d084e188f884283c4f117e1b75ed2e59260e21fa6a23f44c82c989e920a84ff3
@@ -684,7 +684,7 @@ entries:
     version: 2.0.1-alpha.1
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.947046586Z"
+    created: "2026-11-26T06:26:27.908681036Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 75659e3eea8c6a67a57575744c1577371cdcf82a5d772331fa10c90ca2953a0c
@@ -695,7 +695,7 @@ entries:
     version: 2.0.0
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.929511385Z"
+    created: "2026-11-26T06:26:27.89053883Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: c10642704e5c4b9dcc7a05ec72e3eb256663e32e5da270c71fbc649961f27781
@@ -706,7 +706,7 @@ entries:
     version: 2.0.0-alpha.5
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.911056213Z"
+    created: "2026-11-26T06:26:27.873029882Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 8b7d582e8fbcd83809eb36cc74cde25504bd371c484177cca308c7de49f13c27
@@ -717,7 +717,7 @@ entries:
     version: 2.0.0-alpha.4
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.889834295Z"
+    created: "2026-11-26T06:26:27.854029045Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: cd1c6c1ac95d9da54533956dad5be54a1a194253d40256c2822caa045ff467d9
@@ -728,7 +728,7 @@ entries:
     version: 2.0.0-alpha.3
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.877753198Z"
+    created: "2026-11-26T06:26:27.831889474Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: b5ed85b804e1ac86f74a04ab26c7c037d981d1ee15b7869625ad8dff67101357
@@ -739,7 +739,7 @@ entries:
     version: 2.0.0-alpha.2
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.863408236Z"
+    created: "2026-11-26T06:26:27.814822717Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: a8f8e6f17661003f7672661220353e64abe9616c91a57be4a2e9ba6675ec2a70
@@ -750,7 +750,7 @@ entries:
     version: 2.0.0-alpha.1
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.838549283Z"
+    created: "2026-11-26T06:26:27.786641507Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 35442d0832d6cf509b46325234d3faeaa6ab022fd39481ea5df87731d671d208
@@ -761,7 +761,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.81177784Z"
+    created: "2026-11-26T06:26:27.757676569Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 9808e9a519f74a1487193a08b1f89d78ab0f7b6945a89b29370c276355023a3f
@@ -772,7 +772,7 @@ entries:
     version: 1.0.1-alpha.6
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.787957056Z"
+    created: "2026-11-26T06:26:27.732561496Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 852fbe533fe8d9b6a4bd9d257e2a61ea61a485f655bf461bbd78fb239f0b02e9
@@ -783,7 +783,7 @@ entries:
     version: 1.0.1-alpha.5
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.759716479Z"
+    created: "2026-11-26T06:26:27.714273351Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 6eb26c13139dbed870ebe7cab10d2c018f81b4036417d5dfb1b3a44451848a53
@@ -794,7 +794,7 @@ entries:
     version: 1.0.1-alpha.4
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.733805124Z"
+    created: "2026-11-26T06:26:27.694076105Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 086873996301895bc3f11b78283a81595014fd37429e7dd9499c82f8c631499a
@@ -805,7 +805,7 @@ entries:
     version: 1.0.1-alpha.3
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.703153066Z"
+    created: "2026-11-26T06:26:27.674543314Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 27f498ae744ad56c7e4a20602b71d299c0f9ee29cd4645f9f1353ce12863a12e
@@ -816,7 +816,7 @@ entries:
     version: 1.0.1-alpha.2
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.683198192Z"
+    created: "2026-11-26T06:26:27.653715039Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: cab268a3528cc671f8b886419a2e54551feef64826ae38fcffbd74c6285e8f66
@@ -827,7 +827,7 @@ entries:
     version: 1.0.1-alpha.1
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.660825203Z"
+    created: "2026-11-26T06:26:27.633601286Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 196c550330d2775397e64bf1f7c1cc75e37e8087dc2856dc2dca53a1a2a5f60f
@@ -838,7 +838,7 @@ entries:
     version: 1.0.0
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.624635425Z"
+    created: "2026-11-26T06:26:27.595552254Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: dcdb94696c486dd9580ef48297cb9ceb090ec855d0e9fef810f8ad2f90ea255b
@@ -849,7 +849,7 @@ entries:
     version: 1.0.0-alpha.43
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.604649157Z"
+    created: "2026-11-26T06:26:27.576344472Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: e250e768b1a91d03fc11d124047c678657f79373c2fc84db4426284be73bef80
@@ -860,7 +860,7 @@ entries:
     version: 1.0.0-alpha.42
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.582838016Z"
+    created: "2026-11-26T06:26:27.555566499Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 57406304ff47380543b739e381572cbbbe415d211f455ca784811ee5004245b6
@@ -871,7 +871,7 @@ entries:
     version: 1.0.0-alpha.41
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.557141602Z"
+    created: "2026-11-26T06:26:27.533445551Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 2bb5c2e04dd7f64642a7daed63130a4140955b49967afceeebe69270a497e9cd
@@ -882,7 +882,7 @@ entries:
     version: 1.0.0-alpha.40
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.536762576Z"
+    created: "2026-11-26T06:26:27.50821086Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 80b66232920ce81eea5dfb840e809bf0ac84c763ec51d92f1e845ca791078fd0
@@ -893,7 +893,7 @@ entries:
     version: 1.0.0-alpha.39
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.517721631Z"
+    created: "2026-11-26T06:26:27.490653523Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 88ea1a80150e821e5850fe9cb39eaa8769bdf7f921e9b1faee7d119b92056322
@@ -904,7 +904,7 @@ entries:
     version: 1.0.0-alpha.38
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.48989282Z"
+    created: "2026-11-26T06:26:27.474467065Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 56eab06e85610efaafd7444ef486092e9bbf89a20c67452a92891a5ce7857fe0
@@ -915,7 +915,7 @@ entries:
     version: 1.0.0-alpha.37
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.462255516Z"
+    created: "2026-11-26T06:26:27.44377404Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: c0fe86a9d3d7df551fb41e6efbe73368b942e88212f2334da8a45879fec097bc
@@ -926,7 +926,7 @@ entries:
     version: 1.0.0-alpha.36
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.437425641Z"
+    created: "2026-11-26T06:26:27.426400862Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 2ce61ea780e2807a7ca7bb49d54880f167c9519206b37e298ade9adafa510ecc
@@ -937,7 +937,7 @@ entries:
     version: 1.0.0-alpha.35
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.41925697Z"
+    created: "2026-11-26T06:26:27.408180101Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 074f01dfe223311cbfaa7d8caac949b2fb22c8d00ba10734c6398ee0a2dc090d
@@ -948,7 +948,7 @@ entries:
     version: 1.0.0-alpha.34
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.400263745Z"
+    created: "2026-11-26T06:26:27.387251481Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: f9d1120c95ed24cb37ff9da12cfb73137bd428852636c5617a4ecfea23077a04
@@ -959,7 +959,7 @@ entries:
     version: 1.0.0-alpha.33
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.377797388Z"
+    created: "2026-11-26T06:26:27.359782579Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: ab40f3fa9108e1abcd09afbd69384266cc95b8f68fd099a61f43030945810ba3
@@ -970,7 +970,7 @@ entries:
     version: 1.0.0-alpha.32
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.353653778Z"
+    created: "2026-11-26T06:26:27.344234934Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 7b0f15a7c40bc55aed0bb21a802433edf2930a7f6a6a3aca83dc162e7f8929c5
@@ -981,7 +981,7 @@ entries:
     version: 1.0.0-alpha.31
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.325870476Z"
+    created: "2026-11-26T06:26:27.33210327Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 637e4c862d7b32359c9b640b6141a9d8fe78941ba470a3cbae0d39ebf31324d4
@@ -992,7 +992,7 @@ entries:
     version: 1.0.0-alpha.30
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.304833708Z"
+    created: "2026-11-26T06:26:27.314732043Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: e8f8aa57c3e9a79d7106382723f4734e6a5f9b95d1a2d7b70e6e1ef5aec7e39d
@@ -1003,7 +1003,7 @@ entries:
     version: 1.0.0-alpha.29
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.283688402Z"
+    created: "2026-11-26T06:26:27.294698015Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 44d3e6058daf5043f8d05d205a8489470d2f956149290228959d7a1ba4487083
@@ -1014,7 +1014,7 @@ entries:
     version: 1.0.0-alpha.28
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.2603498Z"
+    created: "2026-11-26T06:26:27.284451173Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: c1d0c1d66f2d48409bb95152d9e9deef3a3d845596ac14869fd897b4b967db03
@@ -1025,7 +1025,7 @@ entries:
     version: 1.0.0-alpha.27
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.239823301Z"
+    created: "2026-11-26T06:26:27.269929548Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: db12c378613c9c65c2a3573217a709ddb966868e2829c5f34507bede6b1a4ae4
@@ -1036,7 +1036,7 @@ entries:
     version: 1.0.0-alpha.26
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.223031632Z"
+    created: "2026-11-26T06:26:27.256427938Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 7acfb65317d67858ba4d2654224e9c1675de6c6c2cacfbe17a0c59d77dad3f84
@@ -1047,7 +1047,7 @@ entries:
     version: 1.0.0-alpha.25
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.208639119Z"
+    created: "2026-11-26T06:26:27.240433137Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 68507c6282978e89a5a1a15d20cbb88afe15763ac86d73e7aefbe20eaa178348
@@ -1058,7 +1058,7 @@ entries:
     version: 1.0.0-alpha.24
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.189297243Z"
+    created: "2026-11-26T06:26:27.223031097Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 353c613c8d8c657a6764152b4ac4b0500b61472b10cbee85e1fb3d66112a073f
@@ -1069,7 +1069,7 @@ entries:
     version: 1.0.0-alpha.23
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.175392471Z"
+    created: "2026-11-26T06:26:27.211283437Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 8578560c98a8f9f61ae27838e6334761873a2141b91cdb59d6169dfbc32f7b2f
@@ -1080,7 +1080,7 @@ entries:
     version: 1.0.0-alpha.22
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.165278317Z"
+    created: "2026-11-26T06:26:27.203248513Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 1255fa85e0e6f25590993f50b79e531805ce21dfe977bf89d3ae3167e9e28cc0
@@ -1091,7 +1091,7 @@ entries:
     version: 1.0.0-alpha.21
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.154721979Z"
+    created: "2026-11-26T06:26:27.196211133Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 83751b12a3c481c2eb1ed572327fd9c3440ff355c996d9c18c062cf0ba495de5
@@ -1102,7 +1102,7 @@ entries:
     version: 1.0.0-alpha.20
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.13550484Z"
+    created: "2026-11-26T06:26:27.183766658Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 7bbdfadce497d0ebc101c577825d64985390d318e7242122d05a9a216899e74a
@@ -1113,7 +1113,7 @@ entries:
     version: 1.0.0-alpha.19
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.125106517Z"
+    created: "2026-11-26T06:26:27.177768531Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: c2d82243b65a16a47a12389476b8097e63fb26ede70d007dbf550af10b1e9d2d
@@ -1124,7 +1124,7 @@ entries:
     version: 1.0.0-alpha.18
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.110487882Z"
+    created: "2026-11-26T06:26:27.166008206Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: cad2695019ea88b0d5c032bf94155b4fdf3c62831ded1bfa9e9a74765f9eecc2
@@ -1135,7 +1135,7 @@ entries:
     version: 1.0.0-alpha.17
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.09968846Z"
+    created: "2026-11-26T06:26:27.159233042Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 9d6a5ebcd5cc5459e7b33dbe3ec01f7eeba442329ffd8070afc5c8274ef7c063
@@ -1146,7 +1146,7 @@ entries:
     version: 1.0.0-alpha.16
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.092183489Z"
+    created: "2026-11-26T06:26:27.156091503Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 8963c58e0616bd2d611a1cd52d4d4eca74a5d4967cc6767a86618613d22d2dec
@@ -1157,7 +1157,7 @@ entries:
     version: 1.0.0-alpha.15
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.082616807Z"
+    created: "2026-11-26T06:26:27.150521442Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 8142ad2cc6c926cb9bf9f0356bbdf842fb3a50640fb70cf13520d20bf0d24bfc
@@ -1168,7 +1168,7 @@ entries:
     version: 1.0.0-alpha.14
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.074961072Z"
+    created: "2026-11-26T06:26:27.143967507Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 39e544c4e3e0e526af820233eb9fbc2fb8e173351d6448250468cb069fa7c497
@@ -1179,7 +1179,7 @@ entries:
     version: 1.0.0-alpha.13
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.070139747Z"
+    created: "2026-11-26T06:26:27.139282152Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 343477eb747026e849ae2ea968b59535853d09499bb38ab713b0e381d922e4b4
@@ -1190,7 +1190,7 @@ entries:
     version: 1.0.0-alpha.12
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.065147144Z"
+    created: "2026-11-26T06:26:27.134654638Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: c8f90579053a25b0ef9e8f5e571def67c71618d8e100ec58e3c2dc2a8f9af74d
@@ -1201,7 +1201,7 @@ entries:
     version: 1.0.0-alpha.11
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.05977906Z"
+    created: "2026-11-26T06:26:27.130847218Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 93589a7774cb116780745c865bf7c3fbcf12418ef1cf56e4d0e6262e03fe14af
@@ -1212,7 +1212,7 @@ entries:
     version: 1.0.0-alpha.10
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.643681607Z"
+    created: "2026-11-26T06:26:27.615520324Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: c6207acda8c7a1e076745e1a02b09554a2394cfcbb265a929712bfe321f3e853
@@ -1223,7 +1223,7 @@ entries:
     version: 1.0.0-alpha.9
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.639858906Z"
+    created: "2026-11-26T06:26:27.611495562Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 8a7df933ad999f710e62a88a810b667f7d7802ba0d8d9f135eb3817e3129a8b2
@@ -1234,7 +1234,7 @@ entries:
     version: 1.0.0-alpha.8
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.635987109Z"
+    created: "2026-11-26T06:26:27.607576444Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: b257341e63f78c1c491b13ca60df256b4982646fb0ecb45369e7e374b84a5241
@@ -1245,7 +1245,7 @@ entries:
     version: 1.0.0-alpha.7
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.632500047Z"
+    created: "2026-11-26T06:26:27.603604423Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 320cfb9782ac86303bb66e6f3acb9136dbb58ad2c615708bdc04408d7529b546
@@ -1256,7 +1256,7 @@ entries:
     version: 1.0.0-alpha.6
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.628531218Z"
+    created: "2026-11-26T06:26:27.599756346Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 978ed50c4cc4670a1ee548456d64ac5fad51034a061587b2da9187f2ce3e7846
@@ -1267,7 +1267,7 @@ entries:
     version: 1.0.0-alpha.5
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.53892091Z"
+    created: "2026-11-26T06:26:27.511422092Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: af1bd5ac68b7e304037f4976f15ad1949585b0fc8dddb84fc8f569035e07f185
@@ -1278,7 +1278,7 @@ entries:
     version: 1.0.0-alpha.4
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.307322737Z"
+    created: "2026-11-26T06:26:27.318922718Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: efd01d8e96f6536aa638bc8f2058e8521b15d33b5f26543703963d0ff684ba3f
@@ -1289,7 +1289,7 @@ entries:
     version: 1.0.0-alpha.3
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.140325695Z"
+    created: "2026-11-26T06:26:27.186722594Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: d2548119f41803bf2528a85cb66dd94d2712813fff18a2b1c90a2f6ce909fa47
@@ -1300,7 +1300,7 @@ entries:
     version: 1.0.0-alpha.2
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2026-11-26T04:46:13.055150852Z"
+    created: "2026-11-26T06:26:27.127384601Z"
     description: Deploys commonly used kubernetes services as argocd applications,
       along with any dependent secrets, certificates, etc.
     digest: 6b469ad66bde612d1d4b25d834379bccf1d1976e9f2192c8500d7c56c3f48703
@@ -1312,7 +1312,7 @@ entries:
   prometheus-salesforce-exporter:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-11-26T04:46:14.181550479Z"
+    created: "2026-11-26T06:26:28.100056094Z"
     description: Helm chart for prometheus-salesforce-exporter
     digest: 937eb6020b87f6c20c508cf211c567e78744496a4c3d667b3f164f07cc56982b
     name: prometheus-salesforce-exporter
@@ -1322,7 +1322,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-11-26T04:46:14.180531504Z"
+    created: "2026-11-26T06:26:28.097828854Z"
     description: Helm chart for prometheus-salesforce-exporter
     digest: 0e17dc6e7dd39e9a2fc1c9cad2388d1bb93b5a5be48ec44bcd8b3d6289679423
     name: prometheus-salesforce-exporter
@@ -1333,7 +1333,7 @@ entries:
   pysocha-site:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2026-11-26T04:46:14.187230175Z"
+    created: "2026-11-26T06:26:28.108668835Z"
     description: Deploys a simple pysocha or other static site hosted with a caddy
       server. The caddyfile, site path, and ports/monitoring are all configurable
       for whatever image you want to use that uses caddy and a single directory site.
@@ -1346,7 +1346,7 @@ entries:
     version: 1.1.1
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2026-11-26T04:46:14.186045058Z"
+    created: "2026-11-26T06:26:28.106915219Z"
     description: Deploys a simple pysocha or other static site hosted with a caddy
       server. The caddyfile, site path, and ports/monitoring are all configurable
       for whatever image you want to use that uses caddy and a single directory site.
@@ -1359,7 +1359,7 @@ entries:
     version: 1.1.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2026-11-26T04:46:14.184875786Z"
+    created: "2026-11-26T06:26:28.105470749Z"
     description: Deploys a simple pysocha or other static site hosted with a caddy
       server. The caddyfile, site path, and ports/monitoring are all configurable
       for whatever image you want to use that uses caddy and a single directory site.
@@ -1372,7 +1372,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2026-11-26T04:46:14.183690769Z"
+    created: "2026-11-26T06:26:28.104024927Z"
     description: Deploys a simple pysocha or other static site hosted with a caddy
       server. The caddyfile, site path, and ports/monitoring are all configurable
       for whatever image you want to use that uses caddy and a single directory site.
@@ -1385,7 +1385,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2026-11-26T04:46:14.182636674Z"
+    created: "2026-11-26T06:26:28.101964175Z"
     description: Deploys a simple pysocha or other static site hosted with a caddy
       server. The caddyfile, site path, and ports/monitoring are all configurable
       for whatever image you want to use that uses caddy and a single directory site.
@@ -1398,8 +1398,18 @@ entries:
     version: 1.0.0
   tallyowl:
   - apiVersion: v2
+    appVersion: 0.5.1
+    created: "2026-11-26T06:26:28.164497782Z"
+    description: The TallyOwl head, query service, storage, and controller.
+    digest: 04a2aad53a52e3f2a214fda4a4a83e8d0f1941df033a434c1685fe1a94490267
+    name: tallyowl
+    type: application
+    urls:
+    - https://catalystcommunity.github.io/charts/tallyowl-0.5.1.tgz
+    version: 0.5.1
+  - apiVersion: v2
     appVersion: 0.5.0
-    created: "2026-11-26T04:46:14.230019188Z"
+    created: "2026-11-26T06:26:28.160051893Z"
     description: The TallyOwl head, query service, storage, and controller.
     digest: a22f36b2ab0865418942851b5f0396cfb83f464502e30357c3e3e7ba816f7ab5
     name: tallyowl
@@ -1409,7 +1419,7 @@ entries:
     version: 0.5.0
   - apiVersion: v2
     appVersion: 0.4.1
-    created: "2026-11-26T04:46:14.22113656Z"
+    created: "2026-11-26T06:26:28.15229373Z"
     description: The TallyOwl head, query service, storage, and controller.
     digest: 4a3c826f0dd8200f1488bad6492df7c94403d616ffa0d3e702ec477a2918132f
     name: tallyowl
@@ -1419,7 +1429,7 @@ entries:
     version: 0.4.1
   - apiVersion: v2
     appVersion: 0.4.0
-    created: "2026-11-26T04:46:14.216262787Z"
+    created: "2026-11-26T06:26:28.145075632Z"
     description: The TallyOwl head, query service, storage, and controller.
     digest: c6eb6959daa6a97491b2a6e398a4b31b624803b8ba25c58d3951772c50d4be58
     name: tallyowl
@@ -1429,7 +1439,7 @@ entries:
     version: 0.4.0
   - apiVersion: v2
     appVersion: 0.3.2
-    created: "2026-11-26T04:46:14.211237922Z"
+    created: "2026-11-26T06:26:28.138658629Z"
     description: The TallyOwl head, query service, storage, and controller.
     digest: 789314fb3356890380b7da9b784d1bcea475c515ce7dd3e9f68069132c499901
     name: tallyowl
@@ -1439,7 +1449,7 @@ entries:
     version: 0.3.2
   - apiVersion: v2
     appVersion: 0.3.1
-    created: "2026-11-26T04:46:14.206120289Z"
+    created: "2026-11-26T06:26:28.133748609Z"
     description: The TallyOwl head, query service, storage, and controller.
     digest: 0a1575c67dbfc8f8ca4778b5bda76c24820f212b97e508fb9abbf9a339e484ff
     name: tallyowl
@@ -1449,7 +1459,7 @@ entries:
     version: 0.3.1
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2026-11-26T04:46:14.198073491Z"
+    created: "2026-11-26T06:26:28.123542785Z"
     description: The TallyOwl head, query service, storage, and controller.
     digest: 2ba7b15b0abb33e88fa11eb830a58d7ab3408e74f5e05454064c704d27afccfd
     name: tallyowl
@@ -1459,7 +1469,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.2.1
-    created: "2026-11-26T04:46:14.19325893Z"
+    created: "2026-11-26T06:26:28.117093154Z"
     description: The TallyOwl head, query service, storage, and controller.
     digest: 1d5dcc39ba8f9a74bdfdeb6bbdda650a9f5020bfa5d7e1c8adcde1b8f8568811
     name: tallyowl
@@ -1469,7 +1479,7 @@ entries:
     version: 0.2.1
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2026-11-26T04:46:14.190257006Z"
+    created: "2026-11-26T06:26:28.112878581Z"
     description: The TallyOwl head, query service, storage, and controller.
     digest: d0b009d3436b1ca52a724a0d38010410dd7adc6dd8434313836819816eb021b8
     name: tallyowl
@@ -1479,8 +1489,18 @@ entries:
     version: 0.2.0
   tallyowl-collector:
   - apiVersion: v2
+    appVersion: 0.5.1
+    created: "2026-11-26T06:26:28.193357156Z"
+    description: TallyOwl collector intake, forwarder, and compatibility receiver.
+    digest: ea83435fec6b71fafb4ac49d87f1000484cd3ed510b87247917ef59cfd1a2e47
+    name: tallyowl-collector
+    type: application
+    urls:
+    - https://catalystcommunity.github.io/charts/tallyowl-collector-0.5.1.tgz
+    version: 0.5.1
+  - apiVersion: v2
     appVersion: 0.5.0
-    created: "2026-11-26T04:46:14.272923892Z"
+    created: "2026-11-26T06:26:28.190394474Z"
     description: TallyOwl collector intake, forwarder, and compatibility receiver.
     digest: 7ae6b3677ee4cc4d1fdadc29171b7275cb2632c34a0c18b7e871e46ae1a267e8
     name: tallyowl-collector
@@ -1490,7 +1510,7 @@ entries:
     version: 0.5.0
   - apiVersion: v2
     appVersion: 0.4.1
-    created: "2026-11-26T04:46:14.267769934Z"
+    created: "2026-11-26T06:26:28.187364296Z"
     description: TallyOwl collector intake, forwarder, and compatibility receiver.
     digest: 3bd58b5bad5f906c396f361943cb853c6299bb841df45a6c432de5639dbffb68
     name: tallyowl-collector
@@ -1500,7 +1520,7 @@ entries:
     version: 0.4.1
   - apiVersion: v2
     appVersion: 0.4.0
-    created: "2026-11-26T04:46:14.261990054Z"
+    created: "2026-11-26T06:26:28.184411473Z"
     description: TallyOwl collector intake, forwarder, and compatibility receiver.
     digest: 4ceb5fe0f67ac62eb8c9ad58704d4979c34a1575a677cd41c331420881dec2b8
     name: tallyowl-collector
@@ -1510,7 +1530,7 @@ entries:
     version: 0.4.0
   - apiVersion: v2
     appVersion: 0.3.2
-    created: "2026-11-26T04:46:14.254921346Z"
+    created: "2026-11-26T06:26:28.181488396Z"
     description: TallyOwl collector intake, forwarder, and compatibility receiver.
     digest: 25170c13719638b97502d8931b36fcc88a46533b2cd153636576e315645534b6
     name: tallyowl-collector
@@ -1520,7 +1540,7 @@ entries:
     version: 0.3.2
   - apiVersion: v2
     appVersion: 0.3.1
-    created: "2026-11-26T04:46:14.249821932Z"
+    created: "2026-11-26T06:26:28.176846241Z"
     description: TallyOwl collector intake, forwarder, and compatibility receiver.
     digest: 12fbb52b2788477e1a168da80de7e680600e6d6f0984b67d0124fa5903cebcc6
     name: tallyowl-collector
@@ -1530,7 +1550,7 @@ entries:
     version: 0.3.1
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2026-11-26T04:46:14.243807802Z"
+    created: "2026-11-26T06:26:28.172951317Z"
     description: TallyOwl collector intake, forwarder, and compatibility receiver.
     digest: 9037271f1e5b3b3db8f8457a1551fdfb45b323303bbb7923fee30ad81a9d3db1
     name: tallyowl-collector
@@ -1540,7 +1560,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 0.2.1
-    created: "2026-11-26T04:46:14.238625797Z"
+    created: "2026-11-26T06:26:28.169353207Z"
     description: TallyOwl collector intake, forwarder, and compatibility receiver.
     digest: 141f9074e979f83aa68e672f265a5c517b7daf37ba6643f477c23f9d8f8f4b53
     name: tallyowl-collector
@@ -1550,7 +1570,7 @@ entries:
     version: 0.2.1
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2026-11-26T04:46:14.233803983Z"
+    created: "2026-11-26T06:26:28.16685704Z"
     description: TallyOwl collector intake, forwarder, and compatibility receiver.
     digest: 5bb45b37cf2284c53ef47614340c4186cb6c92671d8717bc014533d62afafb25
     name: tallyowl-collector
@@ -1560,7 +1580,7 @@ entries:
     version: 0.2.0
   typesense:
   - apiVersion: v2
-    created: "2026-11-26T04:46:14.276399727Z"
+    created: "2026-11-26T06:26:28.195431361Z"
     description: Typesense is an open source, typo tolerant search engine that delivers
       fast and relevant results out-of-the-box.
     digest: a26c2f7e0f8e3e1efe979c6d1796a335b44eaa1654772da6d1d210271a2ab7cd
@@ -1578,7 +1598,7 @@ entries:
     - https://catalystcommunity.github.io/charts/typesense-1.0.0.tgz
     version: 1.0.0
   - apiVersion: v2
-    created: "2026-11-26T04:46:14.274638952Z"
+    created: "2026-11-26T06:26:28.194411873Z"
     description: Typesense is an open source, typo tolerant search engine that delivers
       fast and relevant results out-of-the-box.
     digest: d04ed72dc904fc52371defd70e43a096901b77df897d81ddf82933f4a7a01b43
@@ -1595,4 +1615,4 @@ entries:
     urls:
     - https://catalystcommunity.github.io/charts/typesense-1.0.0-alpha.1.tgz
     version: 1.0.0-alpha.1
-generated: "2026-11-26T04:46:12.325728325Z"
+generated: "2026-11-26T06:26:26.389160979Z"
